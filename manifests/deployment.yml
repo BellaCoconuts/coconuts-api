@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: bellacoconutscoconutsapi 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: bellacoconutscoconutsapi 
+    spec:
+      containers:
+        - name: bellacoconutscoconutsapi 
+          image: coconutsacr.azurecr.io/bellacoconutscoconutsapi 
+          ports:
+          - containerPort: 443
